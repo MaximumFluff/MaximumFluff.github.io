@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flying Blind on a Rocket Cycle</title>
+</head>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+  html {
+    max-width: 900px;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    padding: 0;
+    background-color: #0A1828;
+    color: #BFA181;
+  }
+
+  pre {
+    background-color: #181A24;
+    border-radius: 10px;
+    padding: 25px;
+    overflow: scroll;
+  }
+
+  code {
+    font-size: 1rem;
+    color: white;
+  }
+
+  a {
+    color: #BFA181;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .link {
+    margin: 0px 10px 0px 10px;
+  }
+
+  .skill {
+    border-radius: 10px;
+    background-color: #144d4b;
+    margin: 5px;
+    padding: 7px;
+  }
+
+  .link-icon {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .resume-container {
+    margin-bottom: 25px;
+  }
+
+  .resume-container> :is(h4, h5) {
+    margin: 0px;
+  }
+
+  .resume-container>p {
+    margin-top: 5px;
+  }
+
+  .resume-description>img {
+    float: left;
+    width: 75px;
+    border-radius: 50%;
+    shape-outside: circle(35px at center center);
+    margin-right: 30px;
+  }
+
+  #skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  #avatar {
+    width: 142px;
+    height: 126px;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle(70px at center center);
+    margin-right: 25px;
+  }
+
+  #about-me {
+    display: block;
+  }
+</style>
+
+<header>
+  <nav>
+  <a class="link" href="../index.html">Home</a>
+  -
+  <a class="link" href="../resume.html">Resume</a>
+  -
+  <a class="link" href="../blog.html">Blog</a>
+</nav>
+</header>
+
+<body>
+  <div id="content">
+    
+<h1>Hello World</h1>
+<p>Today, it seems that any developer that is anybody has their own personal site. Of course, not wanting to be left out; I had to do the same. I also thought it would be nice for me to have a place to collect my ramblings, assorted writings, resume, contact information, etc.</p>
+<p>The main problem with any personal project is actually summoning the herculean will to finish the bloody thing; somehow I managed to accomplish this.</p>
+<p>I started off investigating multiple Static Site Generators, eventually giving up and realizing the scope of my design would not require anything nearly that complicated. Sensing an opportunity to refresh my Python skills; I realized with only two packages I could build a script that would accomplish all my needs quickly and simply.</p>
+<pre><code class="language-python">from jinja2 import Environment, FileSystemLoader
+import markdown
+</code></pre>
+<p>With those two lines I was pretty much 70% of the way there (Maybe one day I will have the patience and lack of better judgement to write my own Markdown parser, but not today)</p>
+<p>One can of monster and 77 lines of Python later (which most certainly could be cut down if I thought about it a little harder) I was able to service all of my needs easily. I'm sure with time it will expand as the old feature creature creeps up on me and I decide that my personal blog needs to support a chatroom or whatever.</p>
+<p>Working with pure HTML with Jinja2 templating was a refreshing change of pace. The developers who insist on using React for something as simple as a recipe blog should follow my inspiring example and return to simpler methods of site design.</p>
+<p>To conlude this initial post, this small project illustrated three things to me:</p>
+<ul>
+<li>I should have been using Emmet abbreviations with VSCode. To think, I was manually typing in HTML like some kind of simpleton!</li>
+<li>Design is one hard thing to get right</li>
+<li>The way boolean values are capitalized in Python irritates me an irrational amount</li>
+</ul>
+
+  </div>
+</body>
+
+</html>
