@@ -19,7 +19,7 @@
 
   body {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0;
     background-color: #0A1828;
     color: #BFA181;
@@ -33,7 +33,7 @@
   }
 
   code {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: white;
   }
 
@@ -44,7 +44,17 @@
   nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+  }
+
+  hr {
+    margin: 0px 0px 15px 0px;
+    color: #BFA181;
+  }
+
+  h1 {
+    margin-bottom: 0;
   }
 
   .link {
@@ -53,7 +63,7 @@
 
   .skill {
     border-radius: 10px;
-    background-color: #144d4b;
+    background-color: #355352;
     margin: 5px;
     padding: 7px;
   }
@@ -105,11 +115,17 @@
 
 <header>
   <nav>
-  <a class="link" href="index.html">Home</a>
+  <a class="link" href="index.html">About</a>
   -
   <a class="link" href="resume.html">Resume</a>
   -
   <a class="link" href="blog.html">Blog</a>
+  -
+  <a class="link" href="https://github.com/MaximumFluff" target="_blank">GitHub</a>
+  -
+  <a class="link" href="https://www.linkedin.com/in/alex-jacobs-759b9564/" target="_blank">LinkedIn</a>
+  -
+  <a class="link" href="https://mastodon.sdf.org/@MaximumFluff" rel="me" target="_blank">Mastodon</a>
 </nav>
 </header>
 
@@ -117,8 +133,11 @@
   <div id="content">
     
 <h1>Blog</h1>
+<hr>
 
-<a href="blog/Hello World.html">[22/10/2023]: Hello World</a>
+<a href="blog/Hello World.html">
+  [22/10/2023]: Hello World
+</a>
 
 
   </div>

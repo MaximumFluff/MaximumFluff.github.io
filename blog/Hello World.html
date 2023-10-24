@@ -19,7 +19,7 @@
 
   body {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0;
     background-color: #0A1828;
     color: #BFA181;
@@ -33,7 +33,7 @@
   }
 
   code {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: white;
   }
 
@@ -44,7 +44,17 @@
   nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+  }
+
+  hr {
+    margin: 0px 0px 15px 0px;
+    color: #BFA181;
+  }
+
+  h1 {
+    margin-bottom: 0;
   }
 
   .link {
@@ -53,7 +63,7 @@
 
   .skill {
     border-radius: 10px;
-    background-color: #144d4b;
+    background-color: #355352;
     margin: 5px;
     padding: 7px;
   }
@@ -105,11 +115,17 @@
 
 <header>
   <nav>
-  <a class="link" href="../index.html">Home</a>
+  <a class="link" href="../index.html">About</a>
   -
   <a class="link" href="../resume.html">Resume</a>
   -
   <a class="link" href="../blog.html">Blog</a>
+  -
+  <a class="link" href="https://github.com/MaximumFluff" target="_blank">GitHub</a>
+  -
+  <a class="link" href="https://www.linkedin.com/in/alex-jacobs-759b9564/" target="_blank">LinkedIn</a>
+  -
+  <a class="link" href="https://mastodon.sdf.org/@MaximumFluff" rel="me" target="_blank">Mastodon</a>
 </nav>
 </header>
 
@@ -117,6 +133,9 @@
   <div id="content">
     
 <h1>Hello World</h1>
+<hr />
+<p>Published on 22/10/2023<br/>
+Last modified at 23/10/2023</p>
 <p>Today, it seems that any developer that is anybody has their own personal site. Of course, not wanting to be left out; I had to do the same. I also thought it would be nice for me to have a place to collect my ramblings, assorted writings, resume, contact information, etc.</p>
 <p>The main problem with any personal project is actually summoning the herculean will to finish the bloody thing; somehow I managed to accomplish this.</p>
 <p>I started off investigating multiple Static Site Generators, eventually giving up and realizing the scope of my design would not require anything nearly that complicated. Sensing an opportunity to refresh my Python skills; I realized with only two packages I could build a script that would accomplish all my needs quickly and simply.</p>
@@ -124,13 +143,16 @@
 import markdown
 </code></pre>
 <p>With those two lines I was pretty much 70% of the way there (Maybe one day I will have the patience and lack of better judgement to write my own Markdown parser, but not today)</p>
-<p>One can of monster and 77 lines of Python later (which most certainly could be cut down if I thought about it a little harder) I was able to service all of my needs easily. I'm sure with time it will expand as the old feature creature creeps up on me and I decide that my personal blog needs to support a chatroom or whatever.</p>
+<p>One can of monster and 100+ lines of Python later (which most certainly can be cut down and cleaned up which I intend on doing) I was able to service all of my needs easily. I'm sure with time it will expand as the old feature creature creeps up on me and I decide that my personal blog needs to support a chatroom or whatever.</p>
 <p>Working with pure HTML with Jinja2 templating was a refreshing change of pace. The developers who insist on using React for something as simple as a recipe blog should follow my inspiring example and return to simpler methods of site design.</p>
-<p>To conlude this initial post, this small project illustrated three things to me:</p>
+<p>To conlude this initial post, this small project illustrated several things to me:</p>
 <ul>
 <li>I should have been using Emmet abbreviations with VSCode. To think, I was manually typing in HTML like some kind of simpleton!</li>
-<li>Design is one hard thing to get right</li>
-<li>The way boolean values are capitalized in Python irritates me an irrational amount</li>
+<li>Design is the hardest thing to get right</li>
+<li>The way boolean values are capitalized in Python irritates me to an irrational degree</li>
+<li>The development comfort and speed utilizing Jinja2 templating for the front-end has been delightful (no npm_modules to worry about is also a nice change of pace)</li>
+<li>It would be very nice if JSON could handle comments (it would also be nice if I wasn't too lazy to learn another config file format that supported them)</li>
+<li>Apparently there is no good way to get file creation date metadata on Linux with Python for some technical reason currently beyond my understanding (atleast, not guaranteed to work on all Linux/Unix systems)</li>
 </ul>
 
   </div>

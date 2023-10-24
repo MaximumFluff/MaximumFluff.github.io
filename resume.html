@@ -19,7 +19,7 @@
 
   body {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0;
     background-color: #0A1828;
     color: #BFA181;
@@ -33,7 +33,7 @@
   }
 
   code {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: white;
   }
 
@@ -44,7 +44,17 @@
   nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+  }
+
+  hr {
+    margin: 0px 0px 15px 0px;
+    color: #BFA181;
+  }
+
+  h1 {
+    margin-bottom: 0;
   }
 
   .link {
@@ -53,7 +63,7 @@
 
   .skill {
     border-radius: 10px;
-    background-color: #144d4b;
+    background-color: #355352;
     margin: 5px;
     padding: 7px;
   }
@@ -105,11 +115,17 @@
 
 <header>
   <nav>
-  <a class="link" href="index.html">Home</a>
+  <a class="link" href="index.html">About</a>
   -
   <a class="link" href="resume.html">Resume</a>
   -
   <a class="link" href="blog.html">Blog</a>
+  -
+  <a class="link" href="https://github.com/MaximumFluff" target="_blank">GitHub</a>
+  -
+  <a class="link" href="https://www.linkedin.com/in/alex-jacobs-759b9564/" target="_blank">LinkedIn</a>
+  -
+  <a class="link" href="https://mastodon.sdf.org/@MaximumFluff" rel="me" target="_blank">Mastodon</a>
 </nav>
 </header>
 
@@ -117,33 +133,34 @@
   <div id="content">
     
 <h1>Resume</h1>
+<hr>
 
 <div class="resume-container">
   <h4>Kesko | May 2023 - Present | Helsinki, FIN</h4>
   <h5>Full Stack Developer</h5>
-  <!-- <img src="images/kesko.jpg" alt="Kesko logo"> -->
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tenetur illo laboriosam quidem omnis quasi, temporibus aut ducimus sequi doloribus saepe asperiores debitis, esse minima iste laudantium quaerat deserunt dolore.</p>
+  <p>As part of Team Sweden I work to help improve and maintain K-Rauta.se on both sides of the stack</p>
 </div>
 
 <div class="resume-container">
   <h4>eMabler | February 2022 - April 2023 | Helsinki, FIN</h4>
   <h5>Software Developer</h5>
-  <!-- <img src="images/emabler.jpg" alt="eMabler logo"> -->
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tenetur illo laboriosam quidem omnis quasi, temporibus aut ducimus sequi doloribus saepe asperiores debitis, esse minima iste laudantium quaerat deserunt dolore.</p>
+  <p>For all product UI's I maintained, implemented redesigns and added new features based on customer feedback.
+
+I also worked on bugfixes for both ends of the stack, new features for the C# backend and creating internal documentation for new features and architecture choices</p>
 </div>
 
 <div class="resume-container">
   <h4>Veikkaus | September 2019 - February 2022 | Helsinki, FIN</h4>
   <h5>Junior Developer</h5>
-  <!-- <img src="images/veikkaus.jpg" alt="Veikkaus logo"> -->
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tenetur illo laboriosam quidem omnis quasi, temporibus aut ducimus sequi doloribus saepe asperiores debitis, esse minima iste laudantium quaerat deserunt dolore.</p>
+  <p>Worked in the front-end team working on re-implementing the app in React Native. Responsibilities included implementing redesigns of the UI and creating native versions of various games based on their web counterparts.</p>
 </div>
 
 <div class="resume-container">
   <h4>Industry62 | January 2019 - May 2019 | Helsinki, FIN</h4>
   <h5>Software Developer</h5>
-  <!-- <img src="images/industry62.jpg" alt="Industry62 logo"> -->
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tenetur illo laboriosam quidem omnis quasi, temporibus aut ducimus sequi doloribus saepe asperiores debitis, esse minima iste laudantium quaerat deserunt dolore.</p>
+  <p>As part of Industry62 my main task involved front-end programming work for a pair of React Native mobile apps designed to deliver digital health services for pregnant women in Africa.
+
+You can read more about the project here: https://www.industry62.com/case-stories/2019/5/8/myhealthhand</p>
 </div>
 
 <div id="skill-container">
