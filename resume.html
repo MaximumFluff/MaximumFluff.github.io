@@ -5,36 +5,40 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
   <title>Flying Blind on a Rocket Cycle</title>
 </head>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
 
   html {
     max-width: 900px;
-    height: 100vh;
     margin: 0 auto;
   }
 
   body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.3rem;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 18px;
     padding: 0;
     background-color: #0A1828;
     color: #BFA181;
+    display: flex;
+    flex-direction: column;
   }
 
+  code,
   pre {
     background-color: #181A24;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    color: white;
     border-radius: 10px;
-    padding: 25px;
     overflow: scroll;
   }
 
-  code {
-    font-size: 0.9rem;
-    color: white;
+  pre {
+    padding: 20px;
   }
 
   a {
@@ -53,8 +57,22 @@
     color: #BFA181;
   }
 
-  h1 {
+  h1,
+  h3,
+  h4 {
     margin-bottom: 0;
+  }
+
+  li {
+    margin: 5px 0px 5px 0px;
+  }
+
+  footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
   }
 
   .link {
@@ -105,7 +123,7 @@
     border-radius: 50%;
     float: left;
     shape-outside: circle(70px at center center);
-    margin-right: 25px;
+    margin-right: 40px;
   }
 
   #about-me {
@@ -113,8 +131,10 @@
   }
 </style>
 
-<header>
-  <nav>
+<body>
+  <div id="content">
+    <header>
+      <nav>
   <a class="link" href="index.html">About</a>
   -
   <a class="link" href="resume.html">Resume</a>
@@ -127,40 +147,37 @@
   -
   <a class="link" href="https://mastodon.sdf.org/@MaximumFluff" rel="me" target="_blank">Mastodon</a>
 </nav>
-</header>
-
-<body>
-  <div id="content">
+    </header>
     
 <h1>Resume</h1>
 <hr>
 
 <div class="resume-container">
-  <h4>Kesko | May 2023 - Present | Helsinki, FIN</h4>
-  <h5>Full Stack Developer</h5>
-  <p>As part of Team Sweden I work to help improve and maintain K-Rauta.se on both sides of the stack</p>
+  <h3>Kesko | May 2023 - Present | Helsinki, FIN</h3>
+  <h4>Full Stack Developer</h4>
+  <p>As part of the Kesko team I work tirelessy to help improve and maintain K-Rauta.se on both ends of the stack</p>
 </div>
 
 <div class="resume-container">
-  <h4>eMabler | February 2022 - April 2023 | Helsinki, FIN</h4>
-  <h5>Software Developer</h5>
+  <h3>eMabler | February 2022 - April 2023 | Helsinki, FIN</h3>
+  <h4>Software Developer</h4>
   <p>For all product UI's I maintained, implemented redesigns and added new features based on customer feedback.
 
 I also worked on bugfixes for both ends of the stack, new features for the C# backend and creating internal documentation for new features and architecture choices</p>
 </div>
 
 <div class="resume-container">
-  <h4>Veikkaus | September 2019 - February 2022 | Helsinki, FIN</h4>
-  <h5>Junior Developer</h5>
+  <h3>Veikkaus | September 2019 - February 2022 | Helsinki, FIN</h3>
+  <h4>Junior Developer</h4>
   <p>Worked in the front-end team working on re-implementing the app in React Native. Responsibilities included implementing redesigns of the UI and creating native versions of various games based on their web counterparts.</p>
 </div>
 
 <div class="resume-container">
-  <h4>Industry62 | January 2019 - May 2019 | Helsinki, FIN</h4>
-  <h5>Software Developer</h5>
+  <h3>Industry62 | January 2019 - May 2019 | Helsinki, FIN</h3>
+  <h4>Software Developer</h4>
   <p>As part of Industry62 my main task involved front-end programming work for a pair of React Native mobile apps designed to deliver digital health services for pregnant women in Africa.
 
-You can read more about the project here: https://www.industry62.com/case-stories/2019/5/8/myhealthhand</p>
+You can read more about the project <a href='https://www.industry62.com/case-stories/2019/5/8/myhealthhand' target='_blank'>here<a/></p>
 </div>
 
 <div id="skill-container">
@@ -191,9 +208,14 @@ You can read more about the project here: https://www.industry62.com/case-storie
   
   <span class="skill">Markdown</span>
   
+  <span class="skill">Linux</span>
+  
 </div>
 
-  </div>
+    <footer>
+      <p>© Helsinki Softworks 2023 - "We Create Obfuscation"</p>
+    </footer>
 </body>
+</div>
 
 </html>

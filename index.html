@@ -5,36 +5,40 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
   <title>Flying Blind on a Rocket Cycle</title>
 </head>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
 
   html {
     max-width: 900px;
-    height: 100vh;
     margin: 0 auto;
   }
 
   body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.3rem;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 18px;
     padding: 0;
     background-color: #0A1828;
     color: #BFA181;
+    display: flex;
+    flex-direction: column;
   }
 
+  code,
   pre {
     background-color: #181A24;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    color: white;
     border-radius: 10px;
-    padding: 25px;
     overflow: scroll;
   }
 
-  code {
-    font-size: 0.9rem;
-    color: white;
+  pre {
+    padding: 20px;
   }
 
   a {
@@ -53,8 +57,22 @@
     color: #BFA181;
   }
 
-  h1 {
+  h1,
+  h3,
+  h4 {
     margin-bottom: 0;
+  }
+
+  li {
+    margin: 5px 0px 5px 0px;
+  }
+
+  footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
   }
 
   .link {
@@ -105,7 +123,7 @@
     border-radius: 50%;
     float: left;
     shape-outside: circle(70px at center center);
-    margin-right: 25px;
+    margin-right: 40px;
   }
 
   #about-me {
@@ -113,8 +131,10 @@
   }
 </style>
 
-<header>
-  <nav>
+<body>
+  <div id="content">
+    <header>
+      <nav>
   <a class="link" href="index.html">About</a>
   -
   <a class="link" href="resume.html">Resume</a>
@@ -127,31 +147,21 @@
   -
   <a class="link" href="https://mastodon.sdf.org/@MaximumFluff" rel="me" target="_blank">Mastodon</a>
 </nav>
-</header>
-
-<body>
-  <div id="content">
+    </header>
     
-<h1>About me</h1>
+<h1>$ whoami</h1>
 <hr>
 <div>
   <img id="avatar" src="images/avatar.jpg" alt="GitHub avatar">
-  <p>I am a British born/Finnish citizen currently living in Helsinki, Finland. I graduated with a Bachelor's degree in
-    Business Information Technology from Haaga-Helia University of Applied Sciences in 2019 (after starting my degree in
-    2016).
+  <p>Hello! I'm Alex, an English/Finnish hybrid organism and Full Stack Developer currently living in Helsinki, Finland.
+    I
+    graduated with a Bachelor's degree in
+    Business Information Technology from Haaga-Helia University of Applied Sciences in 2019.
   </p>
 
-  <p>I wrote my Bachelor's thesis on a comparitive analysis of JavaScript package managers that were available in 2019,
+  <p>The topic of my Bachelor's thesis was a comparitive analysis of JavaScript package managers that were available in
+    2019,
     which you can read <a href="https://www.theseus.fi/handle/10024/227945" target="_blank">here</a></p>
-
-  <p>During my working career I have worked on the front-end with a speciality in React / React Native
-    development,
-    while also handling back-end development with JavaScript/TypeScript/Express.js/C# (Serverless functions with
-    Azure)</p>
-
-  <p>I am confortable working in a variety of team sizes, from large organizations to small start-ups. I have worked
-    with a wide array of technologies during my time as a developer, and am able to get to grips with new tech quickly
-    as I have frequently had to do so over the years.</p>
 
   <p>In my free time I am a voracious watcher of films, a frequent player of
     tabletop role playing games and an
@@ -166,7 +176,10 @@
   </ul>
 </div>
 
-  </div>
+    <footer>
+      <p>© Helsinki Softworks 2023 - "We Create Obfuscation"</p>
+    </footer>
 </body>
+</div>
 
 </html>
