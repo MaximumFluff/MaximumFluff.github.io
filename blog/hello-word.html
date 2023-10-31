@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../codehilite.css">
+  <title>Maximum Fluff: Flying Blind on a Rocket Cycle</title>
+</head>
+
+<body>
+  <div id="content">
+    <header>
+      <nav>
+  <a class="link" href="../index.html">About</a>
+  -
+  <a class="link" href="../resume.html">Resume</a>
+  -
+  <a class="link" href="../blog.html">Blog</a>
+  -
+  <a class="link" href="https://github.com/MaximumFluff" target="_blank">GitHub</a>
+  -
+  <a class="link" href="https://www.linkedin.com/in/alex-jacobs-759b9564/" target="_blank">LinkedIn</a>
+  -
+  <a class="link" href="https://mastodon.sdf.org/@MaximumFluff" rel="me" target="_blank">Mastodon</a>
+</nav>
+    </header>
+    
+<article>
+  <h1>Hello World!</h1>
+  <hr />
+  <span>
+    Published on 22/10/2023<br />
+    
+    Last modified at 23/10/2023
+    
+  </span>
+  <p>Today, it seems that any developer that is anybody has their own personal site. Of course, not wanting to be left out; I had to do the same. I also thought it would be nice for me to have a place to collect my ramblings, assorted writings, resume, contact information, etc.</p>
+<p>The main problem with any personal project is actually summoning the herculean will to finish the bloody thing; somehow I managed to accomplish this.</p>
+<p>I started off investigating multiple Static Site Generators, eventually giving up and realizing the scope of my design would not require anything nearly that complicated. Sensing an opportunity to refresh my Python skills; I realized with only two packages I could build a script that would accomplish all my needs quickly and simply.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">jinja2</span> <span class="kn">import</span> <span class="n">Environment</span><span class="p">,</span> <span class="n">FileSystemLoader</span>
+<span class="kn">import</span> <span class="nn">markdown</span>
+</code></pre></div>
+
+<p>With those two lines I was pretty much 70% of the way there (Maybe one day I will have the patience and lack of better judgement to write my own Markdown parser, but not today)</p>
+<p>One can of monster and 100+ lines of Python later (which most certainly can be cut down and cleaned up which I intend on doing) I was able to service all of my needs easily. I'm sure with time it will expand as the old feature creature creeps up on me and I decide that my personal blog needs to support a chatroom or whatever.</p>
+<p>Working with pure HTML with Jinja2 templating was a refreshing change of pace. The developers who insist on using React for something as simple as a recipe blog should follow my inspiring example and return to simpler methods of site design.</p>
+<p>To conlude this initial post, this small project illustrated several things to me:</p>
+<ul>
+<li>I should have been using Emmet abbreviations with VSCode. To think, I was manually typing in HTML like some kind of simpleton!</li>
+<li>Design is the hardest thing to get right</li>
+<li>The way boolean values are capitalized in Python irritates me to an irrational degree</li>
+<li>The development comfort and speed utilizing Jinja2 templating for the front-end has been delightful (no npm_modules to worry about is also a nice change of pace)</li>
+<li>It would be very nice if JSON could handle comments (it would also be nice if I wasn't too lazy to learn another config file format that supported them)</li>
+<li>Apparently there is no good way to get file creation date metadata on Linux with Python for some technical reason currently beyond my understanding (atleast, not guaranteed to work on all Linux/Unix systems)</li>
+</ul>
+</article>
+
+    <footer>
+      <p>© Helsinki Softworks 2023 - "We Create Obfuscation"</p>
+    </footer>
+    <noscript>
+      Luckily for you I didn't bother including any trackers
+    </noscript>
+</body>
+</div>
+
+</html>
