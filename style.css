@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
 
+/* Define style variables at root psuedo element */
+:root {
+  --background-color: #0A1828;
+  --code-background-color: #181A24; 
+  --text-color: #BFA181;
+  --skill-box-color: #355352; 
+}
+
 html {
   max-width: 900px;
   margin: 0 auto;
@@ -9,15 +17,15 @@ body {
   font-family: 'JetBrains Mono', sans-serif;
   font-size: 18px;
   padding: 0;
-  background-color: #0A1828;
-  color: #BFA181;
+  background-color: var(--background-color);
+  color: var(--text-color); 
   display: flex;
   flex-direction: column;
 }
 
 code,
 pre {
-  background-color: #181A24;
+  background-color: var(--code-background-color);
   font-family: 'JetBrains Mono', monospace;
   font-size: 16px;
   color: white;
@@ -30,7 +38,7 @@ pre {
 }
 
 a {
-  color: #BFA181;
+  color: var(--text-color);
 }
 
 nav {
@@ -42,7 +50,7 @@ nav {
 
 hr {
   margin: 0px 0px 15px 0px;
-  color: #BFA181;
+  color: var(--text-color);
 }
 
 h1,
@@ -70,7 +78,7 @@ footer {
 
 .skill {
   border-radius: 10px;
-  background-color: #355352;
+  background-color: var(--skill-box-color);
   margin: 5px;
   padding: 7px;
 }
@@ -84,11 +92,11 @@ footer {
   margin-bottom: 25px;
 }
 
-.resume-container> :is(h4, h5, p) {
+.resume-container > :is(h4, h5, p) {
   margin: 0px;
 }
 
-.resume-description>img {
+.resume-description > img {
   float: left;
   width: 75px;
   border-radius: 50%;
