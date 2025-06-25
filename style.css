@@ -126,4 +126,5 @@ footer {
 #article-list {
   list-style-type: none;
   padding: 0px;
+  text-wrap: nowrap;
 }
